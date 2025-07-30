@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,9 +8,11 @@
   <meta name="theme-color" content="#282828" />
   <title>Acerca de Nosotros | Salón Los Arcos | El lugar perfecto para tus eventos</title>
   <meta name="author" content="Salón Los Arcos">
-  <meta name="description" content="Conoce la historia de Salón Los Arcos, fundado en 2014 por Guido Vara Moreno y Paula Contreras Vega">
-  <meta name="keywords" content="salon los arcos, historia, acerca de, eventos, bodas, xv años, guadalupe yancuictlalpan">
-  
+  <meta name="description"
+    content="Conoce la historia de Salón Los Arcos, fundado en 2014 por Guido Vara Moreno y Paula Contreras Vega">
+  <meta name="keywords"
+    content="salon los arcos, historia, acerca de, eventos, bodas, xv años, guadalupe yancuictlalpan">
+
   <!-- SOCIAL MEDIA META -->
   <meta property="og:description" content="Conoce la historia de Salón Los Arcos, fundado en 2014">
   <meta property="og:image" content="preview.png">
@@ -17,7 +20,7 @@
   <meta property="og:title" content="Acerca de Nosotros | Salón Los Arcos">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
-  
+
   <!-- TWITTER META -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@salonlosarcos">
@@ -25,14 +28,14 @@
   <meta name="twitter:title" content="Acerca de Nosotros | Salón Los Arcos">
   <meta name="twitter:description" content="Conoce la historia de Salón Los Arcos, fundado en 2014">
   <meta name="twitter:image" content="preview.png">
-  
+
   <!-- FAVICON FILES -->
   <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
   <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
   <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
   <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
   <link href="ico/favicon.png" rel="shortcut icon">
-  
+
   <!-- CSS FILES -->
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
@@ -41,7 +44,7 @@
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  
+
   <!-- Custom Styles for Gallery -->
   <style>
     .compact-gallery {
@@ -53,129 +56,129 @@
       margin-left: auto;
       margin-right: auto;
     }
-    
+
     .compact-gallery-item {
       position: relative;
       height: 150px;
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    
+
     .compact-gallery-item:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     }
-    
+
     .compact-gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.3s ease;
     }
-    
+
     .compact-gallery-item:hover img {
       transform: scale(1.05);
     }
-    
+
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       margin-top: 40px;
     }
-    
+
     .gallery-card {
       position: relative;
       height: 200px;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
     }
-    
+
     .gallery-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     }
-    
+
     .gallery-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.3s ease;
     }
-    
+
     .gallery-card:hover img {
       transform: scale(1.1);
     }
-    
+
     .gallery-overlay {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(45deg, rgba(212, 175, 55, 0.9), rgba(0,0,0,0.7));
+      background: linear-gradient(45deg, rgba(212, 175, 55, 0.9), rgba(0, 0, 0, 0.7));
       display: flex;
       align-items: center;
       justify-content: center;
       opacity: 0;
       transition: all 0.3s ease;
     }
-    
+
     .gallery-card:hover .gallery-overlay {
       opacity: 1;
     }
-    
+
     .gallery-content {
       text-align: center;
       color: white;
       transform: translateY(20px);
       transition: transform 0.3s ease;
     }
-    
+
     .gallery-card:hover .gallery-content {
       transform: translateY(0);
     }
-    
+
     .gallery-content h4 {
       font-size: 1.2rem;
       margin-bottom: 5px;
       font-weight: 600;
     }
-    
+
     .gallery-content p {
       font-size: 0.9rem;
       opacity: 0.9;
     }
-    
+
     @media (max-width: 768px) {
       .compact-gallery {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
       }
-      
+
       .compact-gallery-item {
         height: 120px;
       }
-      
+
       .gallery-grid {
         grid-template-columns: 1fr;
         gap: 15px;
       }
-      
+
       .gallery-card {
         height: 180px;
       }
     }
-    
+
     @media (max-width: 480px) {
       .compact-gallery {
         grid-template-columns: 1fr;
       }
-      
+
       .compact-gallery-item {
         height: 200px;
       }
@@ -200,41 +203,22 @@
     <div class="menu">
       <ul>
         <li><a href="index.html">INICIO</a></li>
-        <li><a href="#">SALÓN LOS ARCOS</a>
-          <ul>
-            <li><a href="about.html">Nuestra Historia</a></li>
-            <li><a href="facilities.html">Instalaciones</a></li>
-            <li><a href="gallery.html">Galería</a></li>
-          </ul>
-        </li>
-        <li><a href="#">SERVICIOS</a>
-          <ul>
-            <li><a href="salon-rental.html">Renta del Salón</a></li>
-            <li><a href="furniture.html">Mobiliario Completo</a></li>
-            <li><a href="catering.html">Servicio de Banquetes</a></li>
-            <li><a href="additional.html">Servicios Adicionales</a></li>
-          </ul>
-        </li>
-        <li><a href="#">EVENTOS</a>
-          <ul>
-            <li><a href="weddings.html">Bodas</a></li>
-            <li><a href="quinceanos.html">XV Años</a></li>
-            <li><a href="family.html">Eventos Familiares</a></li>
-            <li><a href="corporate.html">Eventos Corporativos</a></li>
-          </ul>
-        </li>
-        <li><a href="philosophy.html">FILOSOFÍA</a></li>
-        <li><a href="news.html">NOTICIAS</a></li>
+        <li><a href="about-homepark.html">ACERCA DE NOSOTROS</a></li>
         <li><a href="contact.html">CONTACTO</a></li>
       </ul>
     </div>
+    
     <div class="side-content">
       <figure> <img src="images/logo-light.png" alt="Salón Los Arcos"> </figure>
-      <p>Con más de 10 años de experiencia, Salón Los Arcos es el lugar perfecto para hacer realidad tus eventos especiales con estilo colonial rústico y atención familiar.</p>
+      <p>Con más de 10 años de experiencia, Salón Los Arcos es el lugar perfecto para hacer realidad tus eventos
+        especiales con estilo colonial rústico y atención familiar.</p>
       <ul class="gallery">
-        <li><a href="images/gallery-thumb01.jpg" data-fancybox><img src="images/gallery-thumb01.jpg" alt="Image"></a></li>
-        <li><a href="images/gallery-thumb02.jpg" data-fancybox><img src="images/gallery-thumb02.jpg" alt="Image"></a></li>
-        <li><a href="images/gallery-thumb03.jpg" data-fancybox><img src="images/gallery-thumb03.jpg" alt="Image"></a></li>
+        <li><a href="images/gallery-thumb01.jpg" data-fancybox><img src="images/gallery-thumb01.jpg" alt="Image"></a>
+        </li>
+        <li><a href="images/gallery-thumb02.jpg" data-fancybox><img src="images/gallery-thumb02.jpg" alt="Image"></a>
+        </li>
+        <li><a href="images/gallery-thumb03.jpg" data-fancybox><img src="images/gallery-thumb03.jpg" alt="Image"></a>
+        </li>
       </ul>
       <address>
         Cda. Hidalgo Manzana 006, Tianguistenco de Galeana, 52600 Guadalupe Yancuictlalpan, Méx.
@@ -292,12 +276,16 @@
           <h5>Haz de tu Evento algo Especial con Nuestros Servicios de Excelencia</h5>
         </div>
         <div class="col-lg-7">
-          <p>Fundado en 2014 por don Guido Vara Moreno y doña Paula Contreras Vega, Salón Los Arcos es una empresa familiar que se ha consolidado como el lugar perfecto para celebrar tus eventos más especiales. Con más de 10 años de experiencia, ofrecemos instalaciones de primera clase con capacidad para 280 personas en un ambiente familiar y acogedor.</p>
+          <p>Fundado en 2014 por don Guido Vara Moreno y doña Paula Contreras Vega, Salón Los Arcos es una empresa
+            familiar que se ha consolidado como el lugar perfecto para celebrar tus eventos más especiales. Con más de
+            10 años de experiencia, ofrecemos instalaciones de primera clase con capacidad para 280 personas en un
+            ambiente familiar y acogedor.</p>
         </div>
         <div class="col-lg-5">
-          <p>Nuestro salón cuenta con estilo colonial rústico, instalaciones acondicionadas y seguras, además de precios accesibles y opciones de pago apropiadas para hacer realidad el evento de tus sueños.</p>
+          <p>Nuestro salón cuenta con estilo colonial rústico, instalaciones acondicionadas y seguras, además de precios
+            accesibles y opciones de pago apropiadas para hacer realidad el evento de tus sueños.</p>
         </div>
-        
+
         <!-- Galería Compacta Mejorada -->
         <div class="col-12">
           <div class="compact-gallery">
@@ -322,12 +310,14 @@
               </a>
             </div>
           </div>
-          
+
           <h4>Donde la Tradición se Encuentra con la Celebración</h4>
-          <p>Desde 2014, nos hemos dedicado a brindar <strong>instalaciones acondicionadas</strong>, suficientes y adecuadas al tipo de servicio que se contrate, con seguridad y diversidad. Nuestro compromiso es ofrecer un servicio de excelencia, trato cordial, con enfoque de atención a los clientes en un ambiente familiar.</p>
+          <p>Desde 2014, nos hemos dedicado a brindar <strong>instalaciones acondicionadas</strong>, suficientes y
+            adecuadas al tipo de servicio que se contrate, con seguridad y diversidad. Nuestro compromiso es ofrecer un
+            servicio de excelencia, trato cordial, con enfoque de atención a los clientes en un ambiente familiar.</p>
           <br>
         </div>
-        
+
         <div class="col-md-6">
           <h6>Nuestros Servicios</h6>
           <ul>
@@ -352,11 +342,17 @@
         </div>
         <div class="col-12">
           <blockquote>
-            <p>Consolidarse como el salón de eventos líder, brindando instalaciones acondicionadas con seguridad y diversidad</p>
+            <p>Consolidarse como el salón de eventos líder, brindando instalaciones acondicionadas con seguridad y
+              diversidad</p>
             <strong>Misión - Salón Los Arcos</strong>
           </blockquote>
-          <p>Nuestros <u>valores fundamentales</u> incluyen Respeto, Integridad, Servicio, Lealtad, Empatía, Paciencia, Gratitud, Perseverancia, Libertad y Responsabilidad. Estos principios guían cada aspecto de nuestro servicio y nos permiten ofrecer una experiencia excepcional a nuestros clientes.</p>
-          <p>Te esperamos en nuestro salón para que conozcas todas estas oportunidades con precios accesibles y opciones de pago apropiadas. Nuestras instalaciones cuentan con todo lo necesario para hacer de tu evento una experiencia inolvidable con el mejor servicio y atención familiar que nos caracteriza desde nuestros inicios.</p>
+          <p>Nuestros <u>valores fundamentales</u> incluyen Respeto, Integridad, Servicio, Lealtad, Empatía, Paciencia,
+            Gratitud, Perseverancia, Libertad y Responsabilidad. Estos principios guían cada aspecto de nuestro servicio
+            y nos permiten ofrecer una experiencia excepcional a nuestros clientes.</p>
+          <p>Te esperamos en nuestro salón para que conozcas todas estas oportunidades con precios accesibles y opciones
+            de pago apropiadas. Nuestras instalaciones cuentan con todo lo necesario para hacer de tu evento una
+            experiencia inolvidable con el mejor servicio y atención familiar que nos caracteriza desde nuestros
+            inicios.</p>
         </div>
       </div>
     </div>
@@ -371,30 +367,36 @@
           <p>Todo lo que necesitas para tu evento perfecto</p>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-item" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; height: 100%;">
+          <div class="service-item"
+            style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; height: 100%;">
             <div class="service-icon" style="font-size: 50px; color: #d4af37; margin-bottom: 20px;">
               <i class="fas fa-dollar-sign"></i>
             </div>
             <h4 style="color: #333; margin-bottom: 15px;">Precios Accesibles</h4>
-            <p style="color: #666;">Ofrecemos tarifas competitivas y paquetes flexibles para que puedas celebrar tu evento sin preocupaciones</p>
+            <p style="color: #666;">Ofrecemos tarifas competitivas y paquetes flexibles para que puedas celebrar tu
+              evento sin preocupaciones</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-item" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; height: 100%;">
+          <div class="service-item"
+            style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; height: 100%;">
             <div class="service-icon" style="font-size: 50px; color: #d4af37; margin-bottom: 20px;">
               <i class="fas fa-concierge-bell"></i>
             </div>
             <h4 style="color: #333; margin-bottom: 15px;">Servicios Completos</h4>
-            <p style="color: #666;">Renta de salón, mobiliario, banquetes y personal de servicio especializado para tu evento</p>
+            <p style="color: #666;">Renta de salón, mobiliario, banquetes y personal de servicio especializado para tu
+              evento</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-item" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; height: 100%;">
+          <div class="service-item"
+            style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; height: 100%;">
             <div class="service-icon" style="font-size: 50px; color: #d4af37; margin-bottom: 20px;">
               <i class="fas fa-vr-cardboard"></i>
             </div>
             <h4 style="color: #333; margin-bottom: 15px;">Recorrido Virtual 360°</h4>
-            <p style="color: #666;">Conoce nuestras instalaciones desde la comodidad de tu hogar con nuestro tour virtual</p>
+            <p style="color: #666;">Conoce nuestras instalaciones desde la comodidad de tu hogar con nuestro tour
+              virtual</p>
           </div>
         </div>
       </div>
@@ -410,7 +412,7 @@
           <p>Algunos de los momentos especiales que hemos tenido el honor de ser parte</p>
         </div>
       </div>
-      
+
       <div class="gallery-grid">
         <div class="gallery-card">
           <a href="images/gallery-thumb01.jpg" data-fancybox="main-gallery">
@@ -423,7 +425,7 @@
             </div>
           </a>
         </div>
-        
+
         <div class="gallery-card">
           <a href="images/gallery-thumb02.jpg" data-fancybox="main-gallery">
             <img src="images/gallery-thumb02.jpg" alt="Fiesta XV Años">
@@ -435,7 +437,7 @@
             </div>
           </a>
         </div>
-        
+
         <div class="gallery-card">
           <a href="images/gallery-thumb03.jpg" data-fancybox="main-gallery">
             <img src="images/gallery-thumb03.jpg" alt="Evento Corporativo">
@@ -447,7 +449,7 @@
             </div>
           </a>
         </div>
-        
+
         <div class="gallery-card">
           <a href="images/side-image01.jpg" data-fancybox="main-gallery">
             <img src="images/side-image01.jpg" alt="Reunión Familiar">
@@ -489,7 +491,7 @@
     </div>
   </section>
 
- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.05s"> <img src="images/logo-light.png"
@@ -543,4 +545,5 @@
   <script src="js/isotope.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
+
 </html>
