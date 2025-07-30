@@ -1,376 +1,546 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="format-detection" content="telephone=no">
-<meta name="theme-color" content="#282828"/>
-<title>Homepark | Real Estate & Luxury Homes</title>
-<meta name="author" content="Themezinho">
-<meta name="description" content="Homepark | Real Estate & Luxury Homes">
-<meta name="keywords" content="homepark, realestate, flat, apartment, benefits, facility, consultation, home, house, studio, pool, animation, transportation">
-
-<!-- SOCIAL MEDIA META -->
-<meta property="og:description" content="Homepark | Real Estate & Luxury Homes">
-<meta property="og:image" content="http://www.themezinho.net/homepark/preview.png">
-<meta property="og:site_name" content="homepark">
-<meta property="og:title" content="homepark">
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://www.themezinho.net/homepark">
-
-<!-- TWITTER META -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@homepark">
-<meta name="twitter:creator" content="@homepark">
-<meta name="twitter:title" content="homepark">
-<meta name="twitter:description" content="Homepark | Real Estate & Luxury Homes">
-<meta name="twitter:image" content="http://www.themezinho.net/homepark/preview.png">
-
-<!-- FAVICON FILES -->
-<link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
-<link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
-<link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
-<link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
-<link href="ico/favicon.png" rel="shortcut icon">
-
-<!-- CSS FILES -->
-<link rel="stylesheet" href="css/fontawesome.min.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="css/fancybox.min.css">
-<link rel="stylesheet" href="css/odometer.min.css">
-<link rel="stylesheet" href="css/swiper.min.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#282828" />
+  <title>Acerca de Nosotros | Salón Los Arcos | El lugar perfecto para tus eventos</title>
+  <meta name="author" content="Salón Los Arcos">
+  <meta name="description" content="Conoce la historia de Salón Los Arcos, fundado en 2014 por Guido Vara Moreno y Paula Contreras Vega">
+  <meta name="keywords" content="salon los arcos, historia, acerca de, eventos, bodas, xv años, guadalupe yancuictlalpan">
+  
+  <!-- SOCIAL MEDIA META -->
+  <meta property="og:description" content="Conoce la historia de Salón Los Arcos, fundado en 2014">
+  <meta property="og:image" content="preview.png">
+  <meta property="og:site_name" content="Salón Los Arcos">
+  <meta property="og:title" content="Acerca de Nosotros | Salón Los Arcos">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  
+  <!-- TWITTER META -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@salonlosarcos">
+  <meta name="twitter:creator" content="@salonlosarcos">
+  <meta name="twitter:title" content="Acerca de Nosotros | Salón Los Arcos">
+  <meta name="twitter:description" content="Conoce la historia de Salón Los Arcos, fundado en 2014">
+  <meta name="twitter:image" content="preview.png">
+  
+  <!-- FAVICON FILES -->
+  <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+  <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+  <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+  <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
+  <link href="ico/favicon.png" rel="shortcut icon">
+  
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/fancybox.min.css">
+  <link rel="stylesheet" href="css/odometer.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Custom Styles for Gallery -->
+  <style>
+    .compact-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 30px 0;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .compact-gallery-item {
+      position: relative;
+      height: 150px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .compact-gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .compact-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    
+    .compact-gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    
+    .gallery-card {
+      position: relative;
+      height: 200px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .gallery-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+    
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-card:hover img {
+      transform: scale(1.1);
+    }
+    
+    .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(212, 175, 55, 0.9), rgba(0,0,0,0.7));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    
+    .gallery-card:hover .gallery-overlay {
+      opacity: 1;
+    }
+    
+    .gallery-content {
+      text-align: center;
+      color: white;
+      transform: translateY(20px);
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-card:hover .gallery-content {
+      transform: translateY(0);
+    }
+    
+    .gallery-content h4 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    
+    .gallery-content p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    
+    @media (max-width: 768px) {
+      .compact-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      
+      .compact-gallery-item {
+        height: 120px;
+      }
+      
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      
+      .gallery-card {
+        height: 180px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .compact-gallery {
+        grid-template-columns: 1fr;
+      }
+      
+      .compact-gallery-item {
+        height: 200px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="preloader">
-  <div class="layer"></div>
-  <!-- end layer -->
-  <div class="inner">
-    <figure><img src="images/preloader.gif" alt="Image"></figure>
-    <p><span class="text-rotater" data-text="Homepark | Elements | Loading">Loading</span></p>
-  </div>
-  <!-- end inner --> 
-</div>
-<!-- end prelaoder -->
-<div class="transition-overlay">
-  <div class="layer"></div>
-</div>
-<!-- end transition-overlay -->
-<div class="side-navigation">
-  <div class="menu">
-    <ul>
-      <li><a href="index.html">START</a></li>
-      <li><a href="#">HOMEPARK</a>
-        <ul>
-          <li><a href="zaga-construction.html">Zaga Construction</a></li>
-          <li><a href="about-homepark.html">About Homepark</a></li>
-          <li><a href="homepark-blocks.html">Homepark Blocks</a></li>
-        </ul>
-      </li>
-      <li><a href="#">PAGES</a>
-        <ul>
-          <li><a href="sales-offices.html">Sales Offices</a></li>
-          <li><a href="press-relases.html">Press Relases</a></li>
-          <li><a href="photo-gallery.html">Photo Gallery</a></li>
-          <li><a href="intro-video.html">Intro Video</a></li>
-          <li><a href="certificates.html">Certificates</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="sales.html">Sales Team</a></li>
-          <li><a href="404.html">404 Error</a></li>
-        </ul>
-      </li>
-      <li><a href="#">APARTMENTS</a>
-        <ul>
-          <li><a href="apartment-one-room.html">1 Room 47m²</a></li>
-          <li><a href="apartment-two-rooms.html">2 Rooms 65m²</a></li>
-          <li><a href="apartment-three-rooms.html">3 Rooms 90m²</a></li>
-        </ul>
-      </li>
-      <li><a href="facilities.html">FACILITIES</a></li>
-      <li><a href="news.html">NEWS</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-  </div>
-  <!-- end menu -->
-  <div class="side-content">
-    <figure> <img src="images/logo-light.png" alt="Image"> </figure>
-    <p>By aiming to take the life quality to an upper level with the whole realized Projects, Homepark continues to be the address of luxury.</p>
-    <ul class="gallery">
-      <li><a href="images/gallery-thumb01.jpg" data-fancybox><img src="images/gallery-thumb01.jpg" alt="Image"></a></li>
-      <li><a href="images/gallery-thumb02.jpg" data-fancybox><img src="images/gallery-thumb02.jpg" alt="Image"></a></li>
-      <li><a href="images/gallery-thumb03.jpg" data-fancybox><img src="images/gallery-thumb03.jpg" alt="Image"></a></li>
-    </ul>
-    <address>
-    Kyiv | G. Stalingrada Avenue, 6 
-    Vilnius | Antakalnio St. 17
-    </address>
-    <h6>+380(98)298-59-73</h6>
-    <p><a href="#">hello@homepark.com.ua</a></p>
-    <ul class="social-media">
-      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-    </ul>
-    <small>© 2019 Homepark | Real Estate & Luxury Homes</small> </div>
-  <!-- end side-content --> 
-</div>
-<!-- end side-navigation -->
-<nav class="navbar">
-  <div class="container">
-    <div class="upper-side">
-      <div class="logo"> <a href="index.html"><img src="images/logo-light.png" alt="Image"></a> </div>
-      <!-- end logo -->
-      <div class="phone-email"> <img src="images/icon-phone.png" alt="Image">
-        <h4>+380(98)298-59-73</h4>
-        <small><a href="#">hello@homepark.com.ua</a></small> </div>
-      <!-- end phone -->
-      <div class="language"> <a href="#">EN</a> <a href="#">UA</a> </div>
-      <!-- end language -->
-      <div class="hamburger"> <span></span> <span></span> <span></span><span></span> </div>
-      <!-- end hamburger --> 
+  <div class="preloader">
+    <div class="layer"></div>
+    <div class="inner">
+      <figure><img src="images/preloader.gif" alt="Image"></figure>
+      <p><span class="text-rotater" data-text="Salón Los Arcos | Acerca de | Cargando">Cargando</span></p>
     </div>
-    <!-- end upper-side -->
+  </div>
+
+  <div class="transition-overlay">
+    <div class="layer"></div>
+  </div>
+
+  <div class="side-navigation">
     <div class="menu">
       <ul>
-        <li><a href="index.html">START</a></li>
-        <li><a href="#">HOMEPARK</a>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="#">SALÓN LOS ARCOS</a>
           <ul>
-            <li><a href="zaga-construction.html">Zaga Construction</a></li>
-            <li><a href="about-homepark.html">About Homepark</a></li>
-            <li><a href="homepark-blocks.html">Homepark Blocks</a></li>
+            <li><a href="about.html">Nuestra Historia</a></li>
+            <li><a href="facilities.html">Instalaciones</a></li>
+            <li><a href="gallery.html">Galería</a></li>
           </ul>
         </li>
-        <li><a href="#">PAGES</a>
+        <li><a href="#">SERVICIOS</a>
           <ul>
-            <li><a href="sales-offices.html">Sales Offices</a></li>
-            <li><a href="press-relases.html">Press Relases</a></li>
-            <li><a href="photo-gallery.html">Photo Gallery</a></li>
-            <li><a href="intro-video.html">Intro Video</a></li>
-            <li><a href="certificates.html">Certificates</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="sales.html">Sales Team</a></li>
-            <li><a href="404.html">404 Error</a></li>
+            <li><a href="salon-rental.html">Renta del Salón</a></li>
+            <li><a href="furniture.html">Mobiliario Completo</a></li>
+            <li><a href="catering.html">Servicio de Banquetes</a></li>
+            <li><a href="additional.html">Servicios Adicionales</a></li>
           </ul>
         </li>
-        <li><a href="#">APARTMENTS</a>
+        <li><a href="#">EVENTOS</a>
           <ul>
-            <li><a href="apartment-one-room.html">1 Room 47m²</a></li>
-            <li><a href="apartment-two-rooms.html">2 Rooms 65m²</a></li>
-            <li><a href="apartment-three-rooms.html">3 Rooms 90m²</a></li>
+            <li><a href="weddings.html">Bodas</a></li>
+            <li><a href="quinceanos.html">XV Años</a></li>
+            <li><a href="family.html">Eventos Familiares</a></li>
+            <li><a href="corporate.html">Eventos Corporativos</a></li>
           </ul>
         </li>
-        <li><a href="facilities.html">FACILITIES</a></li>
-        <li><a href="news.html">NEWS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="philosophy.html">FILOSOFÍA</a></li>
+        <li><a href="news.html">NOTICIAS</a></li>
+        <li><a href="contact.html">CONTACTO</a></li>
       </ul>
     </div>
-    <!-- end menu --> 
-  </div>
-  <!-- end container --> 
-</nav>
-<!-- end navbar -->
-<header class="page-header" data-background="images/slide01.jpg" data-stellar-background-ratio="1.15">
-	<div class="container">
-		<h1>About Homepark</h1>
-		<p>The smaller male cones release pollen, which fertilizes the female</p>
-		  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Start</a></li>
-    <li class="breadcrumb-item"><a href="#">Homepark</a></li>
-    <li class="breadcrumb-item active" aria-current="page">About Homepark</li>
-  </ol>
-	</div>
-	<!-- end container -->
-</header>
-<!-- end page-header -->
-<section class="about-content">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				  <h2><span>Zaga</span> Construction</h2>
-        <h5>By aiming to take the life quality to an upper level with the whole realized Projects of luxury.</h5>
-			</div>
-			<!-- end col-12 -->
-			 <div class="col-lg-7">
-        <p>Apartments simplicity or understood do it we. Song such eyes had and off. Removed winding ask explain delight out few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty entire figure. Occasional diminution announcing new now literature terminated. </p>
-      </div>
-      <!-- en col-7 -->
-      <div class="col-lg-5">
-        <p>Really regard excuse off ten pulled. Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour if pretended. </p>
-      </div>
-      <!-- end col-5 -->
-      
-      <div class="col-12">
-        <div class="gallery-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="images/blog01.jpg" alt="Image"></div>
-      <div class="swiper-slide"><img src="images/blog02.jpg" alt="Image"></div>
-      <div class="swiper-slide"><img src="images/blog03.jpg" alt="Image"></div>
-      <div class="swiper-slide"><img src="images/blog04.jpg" alt="Image"></div>
+    <div class="side-content">
+      <figure> <img src="images/logo-light.png" alt="Salón Los Arcos"> </figure>
+      <p>Con más de 10 años de experiencia, Salón Los Arcos es el lugar perfecto para hacer realidad tus eventos especiales con estilo colonial rústico y atención familiar.</p>
+      <ul class="gallery">
+        <li><a href="images/gallery-thumb01.jpg" data-fancybox><img src="images/gallery-thumb01.jpg" alt="Image"></a></li>
+        <li><a href="images/gallery-thumb02.jpg" data-fancybox><img src="images/gallery-thumb02.jpg" alt="Image"></a></li>
+        <li><a href="images/gallery-thumb03.jpg" data-fancybox><img src="images/gallery-thumb03.jpg" alt="Image"></a></li>
+      </ul>
+      <address>
+        Cda. Hidalgo Manzana 006, Tianguistenco de Galeana, 52600 Guadalupe Yancuictlalpan, Méx.
+      </address>
+      <h6>713 100 0994</h6>
+      <p><a href="mailto:alexvara@live.com.mx">alexvara@live.com.mx</a></p>
+      <ul class="social-media">
+        <li><a href="https://www.facebook.com/profile.php?id=100054229521920"><i class="fab fa-facebook-f"></i></a></li>
+      </ul>
+      <small>© 2025 Salón Los Arcos | El lugar perfecto para tus eventos</small>
     </div>
-    <!-- add swiper-wrapper -->
-    <div class="gallery-pagination"></div>
-    <!-- end gallery-pagination -->
   </div>
-       <!-- end gallery-container -->
-        <h4>Take the life quality to an upper level</h4>
-        <p>Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour if pretended.Apartments simplicity or <strong>understood</strong> do it we. Song such eyes had and off. Removed winding ask explain delight out few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty entire figure. Occasional diminution announcing new now literature terminated. </p><br>
-       
-			</div>
-       <!-- end col-12 -->
-       <div class="col-md-6">
-        <h6>Property Specifications</h6>
-       	<ul>
-          <li>Reget nec nunc. Etiam posuere iaculis quam.</li>
-          <li>Faucibus viverra eget nec nunc. Etiam posuere iaculis quam.</li>
-          <li>Etiam nec urna in odio faucibus viverra eget nec nunc. </li>
-          <li>Lectus Morbi tempus, odio suscipit efficitur vestibulum</li>
-          <li>Ut in ante et quam malesuada gravida. Morbi tempus, odio suscipit </li>
-          <li>Sed lectus vehicula mollis. Ut in ante et quam malesuada gravida.</li>
-        </ul>
-       </div>
-       <!-- end col-6 -->
-       <div class="col-md-6">
-        <h6>Property Benebfits</h6>
-       	<ul>
-          <li>Ut in ante et quam malesuada gravida. Morbi tempus, odio suscipit </li>
-          <li>Sed lectus vehicula mollis. Ut in ante et quam malesuada gravida.</li>
-          <li>Reget nec nunc. Etiam posuere iaculis quam.</li>
-          <li>Faucibus viverra eget nec nunc. Etiam posuere iaculis quam.</li>
-          <li>Integer ac nunc sed lectus vehicula mollis in ante et gravida.</li>
-          <li>Morbi tempus, odio suscipit efficitur vestibulum</li>
-        </ul>
-       </div>
-       <!-- end col-6 -->
-       <div class="col-lg-9">
-       	<div class="video-content">
-       		<video src="videos/video01.mp4" controls muted></video>
-       	</div>
-       	<!-- end video-content -->
-       </div>
-       <!-- end col-9 -->
-       <div class="col-12">
-        <blockquote>
-        	<p>Song such eyes had and off. Removed winding ask explain delight out few behaved lasting</p>
-        	<strong>Zaga Construction Lead Engineer</strong>
-        </blockquote>
-       
-        <p>Considered an invitation do introduced <u>sufficient understood</u> instrument it. Of decisively friendship in as collecting at. No affixed be husband ye females brother garrets proceed. Least child who seven happy yet balls young. Discovery sweetness principle discourse shameless bed one excellent. Sentiments of surrounded friendship dispatched connection is he. Me or produce besides hastily up as pleased. Bore less when had and john shed hope. </p>
-        <p>Started earnest brother believe an exposed so. Me he believing daughters if forfeited at furniture. Age again and stuff downs spoke. Late hour new nay able fat each sell. Nor themselves age introduced frequently use unsatiable devonshire get. They why quit gay cold rose deal park. One same they four did ask busy. Reserved opinions fat him nay position. Breakfast as zealously incommode do agreeable furniture. One too nay led fanny allow plate.</p>
-      </div>
-      <!-- en col-12 -->
-		</div>
-		<!-- end row -->
-	</div>
-	<!-- end container -->
-</section>
-<!-- end about-content -->
-<section class="footer-bar">
-  <div class="container">
-    <div class="inner wow fadeIn">
-      <div class="row">
-        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.05s">
-          <figure><img src="images/footer-icon01.png" alt="Image"></figure>
-          <h3>Address Infos</h3>
-          <p>Kyiv | G. Stalingrada Avenue, 6 <br>
-            Vilnius | Antakalnio St. 17</p>
-        </div>
-        <!-- end col-4 -->
-        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.10s">
-          <figure><img src="images/footer-icon02.png" alt="Image"></figure>
-          <h3>Working Hours</h3>
-          <p>Monday to Friday <strong>09:00</strong> to <strong>18:30</strong> <br>
-            Saturday we work until <strong>15:30</strong></p>
-        </div>
-        <!-- end col-4 -->
-        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.15s">
-          <figure><img src="images/footer-icon03.png" alt="Image"></figure>
-          <h3>Sales Office</h3>
-          <p>Boryssa Himry 124 B Block Pozniaky<br>
-            Kiev Oblast - Ukraine</p>
-        </div>
-        <!-- end col-4 --> 
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end inner --> 
-  </div>
-  <!-- end container --> 
-</section>
-<!-- end footer-bar -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.05s"> <img src="images/logo-light.png" alt="Image" class="logo">
-        <p>By aiming to take the life quality to an upper level with the whole realized Projects, Homepark continues to be the address of luxury.</p>
-        <div class="select-box dropdown show"> <a class="dropdown-toggle" href="#" role="button" id="language-select" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span><img src="images/flag-tr.svg" alt="Image"> Turkish</span> </a>
-          <ul class="dropdown-menu" aria-labelledby="language-select">
-            <li><a class="dropdown-item" href="#"><img src="images/flag-en.svg" alt="Image"> English</a></li>
-            <li><a class="dropdown-item" href="#"><img src="images/flag-ua.svg" alt="Image"> Russian</a></li>
-            <li><a class="dropdown-item" href="#"><img src="images/flag-br.svg" alt="Image"> Portugues</a></li>
-          </ul>
-        </div>
-        <!-- end select-box --> 
-      </div>
-      <!-- end col-4 -->
-      <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.10s">
-        <ul class="footer-menu">
-          <li><a href="#">Homepark</a></li>
-          <li><a href="#">Apartments</a></li>
-          <li><a href="#">Facilities</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <!-- end col-2 -->
-      <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.15s">
-        <ul class="footer-menu">
-          <li><a href="#">Suites</a></li>
-          <li><a href="#">Apartments</a></li>
-          <li><a href="#">Villas & Houses</a></li>
-          <li><a href="#">Butique Room</a></li>
-          <li><a href="#">Buildings</a></li>
-        </ul>
-      </div>
-      <!-- end col-2 -->
-      <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.20s">
-        <div class="contact-box">
-          <h5>CALL CENTER</h5>
-          <h3>+380(98)298-59-73</h3>
-          <p><a href="#">hello@homepark.com.ua</a></p>
-          <ul>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-          </ul>
-        </div>
-        <!-- end contact-box --> 
-      </div>
-      <!-- end col-4 -->
-      <div class="col-12"> <span class="copyright">© 2019 Homepark | Real Estate &amp; Luxury Homes</span> <span class="creation">Site created by <a href="#">Themezinho</a></span> </div>
-      <!-- end col-12 --> 
-    </div>
-    <!-- end row --> 
-  </div>
-  <!-- end container --> 
-</footer>
-<!-- end footer --> 
 
-<!-- JS FILES --> 
-<script src="js/jquery.min.js"></script> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/swiper.min.js"></script> 
-<script src="js/fancybox.min.js"></script> 
-<script src="js/odometer.min.js"></script> 
-<script src="js/wow.min.js"></script> 
-<script src="js/text-rotater.js"></script> 
-<script src="js/jquery.stellar.js"></script> 
-<script src="js/isotope.min.js"></script> 
-<script src="js/scripts.js"></script>
+  <nav class="navbar">
+    <div class="container">
+      <div class="upper-side">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo-light.png" alt="Salón Los Arcos" style="width: 200px; height: auto;">
+          </a>
+        </div>
+        <div class="phone-email">
+          <small></small>
+        </div>
+        <div class="language"> <a href="#"></a> <a href="#"></a> </div>
+        <div class="hamburger"> <span></span> <span></span> <span></span><span></span> </div>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="about-homepark.html">ACERCA DE NOSOTROS</a>
+          <li><a href="contact.html">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header" data-background="images/slide01.jpg" data-stellar-background-ratio="1.15">
+    <div class="container">
+      <h1>Acerca de Nosotros</h1>
+      <p>Donde la tradición se encuentra con la celebración</p>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="#">Salón Los Arcos</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Acerca de Nosotros</li>
+      </ol>
+    </div>
+  </header>
+
+  <section class="about-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><span>Salón</span> Los Arcos</h2>
+          <h5>Haz de tu Evento algo Especial con Nuestros Servicios de Excelencia</h5>
+        </div>
+        <div class="col-lg-7">
+          <p>Fundado en 2014 por don Guido Vara Moreno y doña Paula Contreras Vega, Salón Los Arcos es una empresa familiar que se ha consolidado como el lugar perfecto para celebrar tus eventos más especiales. Con más de 10 años de experiencia, ofrecemos instalaciones de primera clase con capacidad para 280 personas en un ambiente familiar y acogedor.</p>
+        </div>
+        <div class="col-lg-5">
+          <p>Nuestro salón cuenta con estilo colonial rústico, instalaciones acondicionadas y seguras, además de precios accesibles y opciones de pago apropiadas para hacer realidad el evento de tus sueños.</p>
+        </div>
+        
+        <!-- Galería Compacta Mejorada -->
+        <div class="col-12">
+          <div class="compact-gallery">
+            <div class="compact-gallery-item">
+              <a href="images/gallery-thumb01.jpg" data-fancybox="gallery">
+                <img src="images/gallery-thumb01.jpg" alt="Salón Los Arcos - Vista Principal">
+              </a>
+            </div>
+            <div class="compact-gallery-item">
+              <a href="images/gallery-thumb02.jpg" data-fancybox="gallery">
+                <img src="images/gallery-thumb02.jpg" alt="Eventos Los Arcos - Celebración">
+              </a>
+            </div>
+            <div class="compact-gallery-item">
+              <a href="images/gallery-thumb03.jpg" data-fancybox="gallery">
+                <img src="images/gallery-thumb03.jpg" alt="Instalaciones Los Arcos - Interior">
+              </a>
+            </div>
+            <div class="compact-gallery-item">
+              <a href="images/side-image01.jpg" data-fancybox="gallery">
+                <img src="images/side-image01.jpg" alt="Celebraciones Los Arcos - Ambiente">
+              </a>
+            </div>
+          </div>
+          
+          <h4>Donde la Tradición se Encuentra con la Celebración</h4>
+          <p>Desde 2014, nos hemos dedicado a brindar <strong>instalaciones acondicionadas</strong>, suficientes y adecuadas al tipo de servicio que se contrate, con seguridad y diversidad. Nuestro compromiso es ofrecer un servicio de excelencia, trato cordial, con enfoque de atención a los clientes en un ambiente familiar.</p>
+          <br>
+        </div>
+        
+        <div class="col-md-6">
+          <h6>Nuestros Servicios</h6>
+          <ul>
+            <li>Precios Accesibles - Tarifas competitivas y paquetes flexibles</li>
+            <li>Servicios Completos - Renta de salón, mobiliario y banquetes</li>
+            <li>Recorrido Virtual 360° - Conoce nuestras instalaciones</li>
+            <li>Capacidad para 280 personas en 480 m²</li>
+            <li>Personal de servicio especializado</li>
+            <li>Estacionamiento amplio y áreas verdes</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h6>Tipos de Eventos</h6>
+          <ul>
+            <li>Bodas - Celebra el día más importante de tu vida</li>
+            <li>XV Años - Fiestas de quinceañera inolvidables</li>
+            <li>Eventos Familiares - Reuniones y celebraciones íntimas</li>
+            <li>Eventos Corporativos - Reuniones empresariales</li>
+            <li>Banquetes - Servicio de catering especializado</li>
+            <li>Celebraciones Especiales - Cualquier ocasión importante</li>
+          </ul>
+        </div>
+        <div class="col-12">
+          <blockquote>
+            <p>Consolidarse como el salón de eventos líder, brindando instalaciones acondicionadas con seguridad y diversidad</p>
+            <strong>Misión - Salón Los Arcos</strong>
+          </blockquote>
+          <p>Nuestros <u>valores fundamentales</u> incluyen Respeto, Integridad, Servicio, Lealtad, Empatía, Paciencia, Gratitud, Perseverancia, Libertad y Responsabilidad. Estos principios guían cada aspecto de nuestro servicio y nos permiten ofrecer una experiencia excepcional a nuestros clientes.</p>
+          <p>Te esperamos en nuestro salón para que conozcas todas estas oportunidades con precios accesibles y opciones de pago apropiadas. Nuestras instalaciones cuentan con todo lo necesario para hacer de tu evento una experiencia inolvidable con el mejor servicio y atención familiar que nos caracteriza desde nuestros inicios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" style="padding: 80px 0; background: #f8f9fa;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2>Nuestros Servicios de Excelencia</h2>
+          <p>Todo lo que necesitas para tu evento perfecto</p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-item" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; height: 100%;">
+            <div class="service-icon" style="font-size: 50px; color: #d4af37; margin-bottom: 20px;">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <h4 style="color: #333; margin-bottom: 15px;">Precios Accesibles</h4>
+            <p style="color: #666;">Ofrecemos tarifas competitivas y paquetes flexibles para que puedas celebrar tu evento sin preocupaciones</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-item" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; height: 100%;">
+            <div class="service-icon" style="font-size: 50px; color: #d4af37; margin-bottom: 20px;">
+              <i class="fas fa-concierge-bell"></i>
+            </div>
+            <h4 style="color: #333; margin-bottom: 15px;">Servicios Completos</h4>
+            <p style="color: #666;">Renta de salón, mobiliario, banquetes y personal de servicio especializado para tu evento</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-item" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; height: 100%;">
+            <div class="service-icon" style="font-size: 50px; color: #d4af37; margin-bottom: 20px;">
+              <i class="fas fa-vr-cardboard"></i>
+            </div>
+            <h4 style="color: #333; margin-bottom: 15px;">Recorrido Virtual 360°</h4>
+            <p style="color: #666;">Conoce nuestras instalaciones desde la comodidad de tu hogar con nuestro tour virtual</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section Mejorada -->
+  <section class="gallery-section" style="padding: 80px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2>Galería de Eventos Realizados</h2>
+          <p>Algunos de los momentos especiales que hemos tenido el honor de ser parte</p>
+        </div>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <a href="images/gallery-thumb01.jpg" data-fancybox="main-gallery">
+            <img src="images/gallery-thumb01.jpg" alt="Boda Elegante">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <h4>Boda Elegante</h4>
+                <p>Evento Familiar</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="gallery-card">
+          <a href="images/gallery-thumb02.jpg" data-fancybox="main-gallery">
+            <img src="images/gallery-thumb02.jpg" alt="Fiesta XV Años">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <h4>Fiesta XV Años</h4>
+                <p>Celebración Especial</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="gallery-card">
+          <a href="images/gallery-thumb03.jpg" data-fancybox="main-gallery">
+            <img src="images/gallery-thumb03.jpg" alt="Evento Corporativo">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <h4>Evento Corporativo</h4>
+                <p>Reunión Empresarial</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="gallery-card">
+          <a href="images/side-image01.jpg" data-fancybox="main-gallery">
+            <img src="images/side-image01.jpg" alt="Reunión Familiar">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <h4>Reunión Familiar</h4>
+                <p>Celebración Íntima</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-bar">
+    <div class="container">
+      <div class="inner wow fadeIn">
+        <div class="row">
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.05s">
+            <figure><img src="images/footer-icon01.png" alt="Image"></figure>
+            <h3>Información de Contacto</h3>
+            <p>Cda. Hidalgo Manzana 006,<br>
+              52600 Guadalupe Yancuictlalpan, Méx.</p>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.10s">
+            <figure><img src="images/footer-icon02.png" alt="Image"></figure>
+            <h3>Horarios de Atención</h3>
+            <p>Lunes a Domingo <strong>9:00 AM</strong> a <strong>11:00 PM</strong></p>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.15s">
+            <figure><img src="images/footer-icon03.png" alt="Image"></figure>
+            <h3>Oficina de Ventas</h3>
+            <p>Salón Los Arcos<br>
+              Guadalupe Yancuictlalpan, Méx.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.05s"> <img src="images/logo-light.png"
+            alt="Salón Los Arcos" class="logo">
+          <p>Con más de 10 años de experiencia, Salón Los Arcos continúa siendo la dirección del lujo y la elegancia
+            para tus eventos especiales.</p>
+        </div>
+        <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.10s">
+          <ul class="footer-menu">
+            <li><a href="about-homepark.html">Acerca de Nosotros</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.15s">
+          <ul class="footer-menu">
+            <li><a href="#">Bodas</a></li>
+            <li><a href="#">XV Años</a></li>
+            <li><a href="#">Eventos Familiares</a></li>
+            <li><a href="#">Eventos Corporativos</a></li>
+            <li><a href="#">Banquetes</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.20s">
+          <div class="contact-box">
+            <h5>CENTRO DE LLAMADAS</h5>
+            <h3>713 100 0994</h3>
+            <p><a href="mailto:alexvara@live.com.mx">alexvara@live.com.mx</a></p>
+            <ul>
+              <li><a href="https://www.facebook.com/profile.php?id=100054229521920"><i
+                    class="fab fa-facebook-f"></i></a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-12"> <span class="copyright">© 2025 Salón Los Arcos | El lugar perfecto para tus eventos</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/fancybox.min.js"></script>
+  <script src="js/odometer.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/text-rotater.js"></script>
+  <script src="js/jquery.stellar.js"></script>
+  <script src="js/isotope.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
